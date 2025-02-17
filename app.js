@@ -20,9 +20,10 @@ let amigos = [];
             let lista = document.getElementById("listaAmigos");
             lista.innerHTML = ""; // Limpa a lista antes de atualizar
 
-            amigos.forEach(nome => {
+                for (let i = 0; i < amigos.length; i++) {
                 let li = document.createElement("li");
-                li.textContent = nome;
+                li.textContent = amigos[i];
                 lista.appendChild(li);
-            });
+            }
+
         }
